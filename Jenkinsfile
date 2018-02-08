@@ -11,9 +11,9 @@ pipeline {
      }
 
 stages{
-        stage('Build'){
+	stage('Build'){
             steps {
-                sh 'mvn clean package'
+                sh '/Users/lema/apache-maven-3.5.2/bin/mvn clean package'
             }
             post {
                 success {
